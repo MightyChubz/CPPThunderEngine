@@ -6,13 +6,13 @@ void SDLPrintError(const char* method, const char* senderMethod, int returnNumbe
 {
 	const char* T_returnN = (const char*) returnNumber;
 
-	std::cout << "Error ocurred on method, " << senderMethod << " with, " << method << " error. Error: " << SDL_GetError();
+	std::cout << "Error occurred on method, " << senderMethod << " with, " << method << " error. Error: " << SDL_GetError();
 	throw std::runtime_error(T_returnN);
 }
 
 void SDLPrintError(const char* method, const char* senderMethod)
 {
-	std::cout << "Error ocurred on method, " << senderMethod << " with, " << method << " error. Error: " << SDL_GetError();
+	std::cout << "Error occurred on method, " << senderMethod << " with, " << method << " error. Error: " << SDL_GetError();
 }
 
 void ThrowSDLError(const char* msg)
