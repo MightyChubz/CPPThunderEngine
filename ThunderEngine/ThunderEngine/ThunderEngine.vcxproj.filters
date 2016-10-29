@@ -27,7 +27,7 @@
     <ClInclude Include="include\window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="util.h">
+    <ClInclude Include="include\util.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -41,7 +41,7 @@
     <ClCompile Include="source\window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="util.cpp">
+    <ClCompile Include="source\util.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
