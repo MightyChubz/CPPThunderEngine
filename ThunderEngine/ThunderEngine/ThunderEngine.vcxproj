@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{37ACDF3D-520D-4242-954F-2F593B8AE95B}</ProjectGuid>
+    <ProjectGuid>{5D4D939E-E826-40DF-AEDB-60AC6F877709}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>ThunderEngine</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
@@ -166,7 +166,6 @@
     </ClCompile>
     <ClCompile Include="source\game.cpp" />
     <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="ThunderEngine.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
