@@ -1,9 +1,8 @@
 #include "../include/window.h"
-#include "../util.h"
+#include "../include/util.h"
 
 #include <SDL.h>
 #include <stdexcept>
-
 
 ThunderEngine::Window::Window(WindowProperties* properties)
 {

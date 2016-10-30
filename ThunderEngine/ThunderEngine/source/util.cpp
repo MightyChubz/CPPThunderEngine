@@ -1,4 +1,4 @@
-#include "util.h"
+#include "../include/util.h"
 #include <SDL_error.h>
 #include <iostream>
 
