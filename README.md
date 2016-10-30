@@ -9,6 +9,6 @@ This is the Creative Commons Attribution-NoDerivatives 4.0 International License
 Notice: This license is currently temporary and a changing of the license may occur. However as of right now the license, CC Attribution-NoDerivatives 4.0 International License is going to be used.
 
 ##TODO
-- [ ] Change the class name to a general file (basically merge the classes.
-- [ ] Stop using classes (note: I don't mean stop using classes period, I mean stop using it when they don't need to be used).
-- [ ] Use struct's more in this engine.
+- [X] Change the class name to a general file (basically merge the classes.
+- [X] Stop using classes (note: I don't mean stop using classes period, I mean stop using it when they don't need to be used).
+- [X] Use struct's more in this engine.
