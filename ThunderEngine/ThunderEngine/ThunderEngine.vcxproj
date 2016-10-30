@@ -155,6 +155,8 @@
     <ClInclude Include="include\ThunderEngine_Video.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="include\ThunderEngine_IO.h" />
+    <ClInclude Include="include\ThunderEngine_Util.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -173,6 +175,8 @@
     </ClCompile>
     <ClCompile Include="source\ThunderEngine_Video.cpp" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="source\ThunderEngine_IO.cpp" />
+    <ClCompile Include="source\ThunderEngine_Util.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

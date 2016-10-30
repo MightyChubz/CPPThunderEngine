@@ -20,11 +20,7 @@
 
 namespace ThunderEngine
 {
-	void SDLPrintError(const char* method, const char* methodSender, int returnNumber);
-	void SDLPrintError(const char* method, const char* methodSender);
-	void ThrowSDLError(const char* msg);
-
-	enum WindowState
+	enum WindowState : int
 	{
 		WINDOW_CREATION_SUCCESS = 0X00,
 		WINDOW_CREATION_FAIL = 0X01,
@@ -34,7 +30,7 @@ namespace ThunderEngine
 		WINDOW_RENDERER_CREATION_FAIL = 0x03
 	};
 
-	enum THUNDERENGINE_API WindowPosition
+	enum THUNDERENGINE_API WindowPosition : int
 	{
 		WINDOW_POSITION_CENTER = 0x100,
 		WINDOW_POSITION_UNDEFINED = 0x200
@@ -57,17 +53,24 @@ namespace ThunderEngine
 
 		int init();
 		int create();
-		void loopStart();
+		int init_context();
+		bool loop_start();
+		void delayed_close(int milli);
+		void set_title(const char* title);
+		void set_window_p(int x, int y);
+		void set_window_wh(int width, int height);
+		void set_window_properties(const char* title, int width, int height, int x, int y);
+		void set_window_fullscreen(bool fullscreen);
+		void close_window();
+		void close_all();
+		bool is_fullscreen();
+		void set_vfullscreen(bool fullscreen);
 	private:
+		bool w_fullscreen = false;
 		WindowProperties* properties;
 
 		SDL_Window* window;
 		SDL_Renderer* renderer;
-
-		int initContext();
-	protected:
-		void update();
-		void render();
 	};
 }
 

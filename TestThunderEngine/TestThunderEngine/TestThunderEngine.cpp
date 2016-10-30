@@ -3,10 +3,10 @@
 
 #include "stdafx.h"
 
-#include <window.h>
 #include <iostream>
+#include "ThunderEngine.h"
 
-int main()
+int main(int argc, char** argv)
 {
 	using namespace ThunderEngine;
 
@@ -20,9 +20,15 @@ int main()
 	};
 
 	Window* window = new Window(&properties);
+	window->init();
+	window->create();
+	window->init_context();
 
-	std::cout << window->init() << std::endl;
+	while (window->loop_start())
+	{
+		window->delayed_close(3000 * 4);
+		break;
+	}
 
     return 0;
 }
-
