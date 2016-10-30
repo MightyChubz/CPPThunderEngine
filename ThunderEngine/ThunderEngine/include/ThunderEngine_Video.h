@@ -20,6 +20,10 @@
 
 namespace ThunderEngine
 {
+	void SDLPrintError(const char* method, const char* methodSender, int returnNumber);
+	void SDLPrintError(const char* method, const char* methodSender);
+	void ThrowSDLError(const char* msg);
+
 	enum WindowState
 	{
 		WINDOW_CREATION_SUCCESS = 0X00,
